@@ -103,9 +103,8 @@
     type="application/ld+json">{"@context":"https://schema.org/","@type":"WebPage","name":"HOOK MY AXX","url":"https://hookmyaxx.com","sameAs":[],"description":"Meet hot models here","identifier":"Hook my AXX","alternateName":"Meet hot Models here","significantLink":"https://hookmyaxx.com","dateCreated":1659224506000,"dateModified":1689848356000,"isPartOf":"https://hookmyaxx.com","genre":"other","keywords":"other"}</script>
 <meta name="msapplication-TileColor" content="#FFFFFF" />
 <meta name="theme-color" content="#ffffff" />
-    <title>HMA-Bitcoin Payment</title>
+    <title>HMA-Checkout</title>
     <link rel="website icon" type="png" href="logo.png">
-    <meta name="next-head-count" content="58" />
     <link rel="preload" href="https://assets.production.linktr.ee/profiles/_next/static/css/a1496ae562b846943f52.css"
         as="style" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://assets.production.linktr.ee/profiles/_next/static/css/a1496ae562b846943f52.css"
@@ -129,11 +128,6 @@
     <script
         src="https://assets.production.linktr.ee/profiles/_next/static/17074446ad68a4281d53f5dfb3dd99cdf2107d55/_ssgManifest.js"
         defer="" crossorigin="anonymous"></script>
-
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-
-        
     <style data-styled="" data-styled-version="5.2.1">
         .WQwKa {
             position: fixed;
@@ -769,7 +763,7 @@
             overflow-wrap: break-word;
             word-wrap: break-word;
             word-break: break-word;
-
+     
         }
 
         /*!sc*/
@@ -862,7 +856,7 @@
 
 
 
-
+     
 
         /*!sc*/
         .cfTWPs:hover {
@@ -1078,36 +1072,34 @@
         }
 
 
+*{
+  transition: all 0.5s ease;
+}
+#thumbnails{
+  text-align:center;}
+  .gallery{
+    width:50px;
+    height:50px;
+    margin:10px;
+    cursor:pointer;
+  }
+ 
+
+#main{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  margin:20px auto;
+}
 
 
-        #thumbnails {
-            text-align: center;
-        }
-
-        .gallery {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
-            cursor: pointer;
-        }
+.hidden{
+  opacity:0;
+}
 
 
-        #main {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            margin: 20px auto;
-        }
-
-
-        .hidden {
-            opacity: 0;
-        }
-
-
-
-       .master-container {
+.master-container {
             display: grid;
             grid-template-columns: auto;
             gap: 5px;
@@ -1374,132 +1366,74 @@ button, input, select, textarea {
                     <div class="sc-bdfBwQ jrDHLp">
 
                         <div class="master-container">
-
-
-                            <div class="card checkout">
-                                <h1>
-                                    <span>
-                                        <div class="checkout--footer">
-                                            <label class="price"><sup>$</sup>20</label>
-
-                                    </span>
-                                </h1>
-
-                                <div>
-                                    <p>
-                                        Pay with
-                                    </p>
-                                    <div class="bitcoin-btn">
-                                        <button>
-                                            Bitcoin
-                                        </button>
-                                    </div>
-
-                                    <div class="bitcoin-div">
-                                    <img class="bitcoin-wallet" src="bitcoin-wallet.png" alt="BTC Wallet">
-                                </div>
-                                <p class="warning">
-                                    Send only BTC to this Wallet
-                                </p>
-
-                                <div class="copy-address">
-                                <p class="address-head">
-                                    ADDRESS
-                               </p>
-                                <div class="copy-link">
-                                    <input type="text" class="copy-link-input" value="1j3AErvDiboDob197UA2eJvvWufg8kjKP" readonly>
-                                    <button type="button" class="copy-link-button">
-                                      <span class="material-icons">content_copy</span>
-                                    </button>
+                            <div class="card cart">
+                              <label class="title">Your cart</label>
+                              <div class="products">
+                                <div class="product">
+                                  <img width="50" height="50" src="logo.png" alt="logo">
+                                  <div>
+                                    <span>Connection Fee</span>
+                                    <p>Model</p>
+                                    <p>KK Assaria</p>
                                   </div>
+                                  
+                                  <label class="price small">$20</label>
                                 </div>
-                                  <script>
-                                      document.querySelectorAll(".copy-link").forEach((copyLinkContainer) => {
-                              const inputField = copyLinkContainer.querySelector(".copy-link-input");
-                              const copyButton = copyLinkContainer.querySelector(".copy-link-button");
-                             
-                            
-                              inputField.addEventListener("focus", () => inputField.select());
-                            
-                              copyButton.addEventListener("click", () => {
-                                const text = inputField.value;
-                            
-                                inputField.select();
-                                navigator.clipboard.writeText(text);
-                            
-                                inputField.value = "Copied!";
-                                setTimeout(() => (inputField.value = text), 2000);
-                              });
-                            });
-                            
-                                  </script>
-
-                                </div>
-
-                                <div class="sc-bdfBwQ jrDHLp">
-                                    <form class="form" action="https://eu-submit.jotform.com/submit/232224903459355" method="post" name="form_232224903459355" id="232224903459355" accept-charset="utf-8" autocomplete="on">
-                                        
-                                            <label>
-                                                <input required="" id="first_3" name="q3_name[first]" placeholder="" type="text" class="input" data-component="first" aria-labelledby="label_3 sublabel_3_first">
-                                                <span>First Name</span>
-                                            </label>
-
-                                            <label>
-                                                <input required="" id="last_3" name="q3_name[last]" placeholder="" type="text" class="input" data-component="last" aria-labelledby="label_3 sublabel_3_last">
-                                                <span>Last Name</span>
-                                            </label>
-            
-                                        <label>
-                                            <input required="" id="input_4_full" name="q4_phoneNumber[full]" data-type="mask-number" placeholder=""  type="tel" class="input" maxlength="10" pattern="\d+" >
-                                            <span>Phone number</span>
-                                        </label>
-                                                
-                                        
-                                        <button type="submit" class="checkout-btn">Payment Sent!</button>
-                                    </form>
-                                    
-            
-                                </div>
-
+                              </div>
+                            </div>
+                          
+                            <div class="card checkout">
+                              <label class="title">Checkout</label>
+                              <div class="details">
+                                <span>Your cart subtotal:</span>
+                                <span><div class="checkout--footer">
+                                <label class="price"><sup>$</sup>20</label>
                                 
+                              </div></span>
+                                <span>As soon as payment is confirmed, Model will send you a text about where you are meeting! <br> <br> Choose any of the options bellow to make payment</span>
+                                
+                              </div>
+                              <div class="checkout--footer">
+                                  <a href="bitcoin-payment-m8.html">
+                                <button class="checkout-btn">Bitcoin</button>
+                            </a> 
+                            <a href="cashapp-payment-m8.html">
+                                <button class="checkout-btn">Cashapp</button>
+                            </a> 
+                            <a href="giftcard-payment-m8.html">
+                                <button class="checkout-btn">GiftCard</button>
+                            </a>
+                              </div>
                             </div>
                             <div class="card coupons">
-                                <h1>
-                                    <span>
-                                        <div class="checkout--footer">
-                                            <label class="price">Follow these steps</label>
-                                    </span>
-                                </h1>
-                                <ul>
-                                    <li>Scan or copy the Bitcoin (BTC) address above</li>
-                                    <li>Send the exact amount you see above using your Bitcoin wallet</li>
-                                    <li>After payment is sent, input your name and phone number where your model will contact you</li>
-                                    <li>Click "Payment Sent!"</li>
-                                    <li>In 2 minutes your model will be texting you</li>
-                                  </ul>
+                              <label class="title">Apply coupons</label>
+                              <form class="form">
+                                  <input type="text" placeholder="Apply your coupons here" class="input_field">
+                                  <button>Apply</button>
+                              </form>
                             </div>
-                        </div>
+                          </div>
 
                     </div>
                     <script>
                         var thumbnails = document.getElementById("thumbnails")
-                        var imgs = thumbnails.getElementsByTagName("img")
-                        var main = document.getElementById("main")
-                        var counter = 0;
+var imgs = thumbnails.getElementsByTagName("img")
+var main = document.getElementById("main")
+var counter=0;
 
-                        for (let i = 0; i < imgs.length; i++) {
-                            let img = imgs[i]
-
-
-                            img.addEventListener("click", function () {
-                                main.src = this.src
-                            })
-
-                        }
+for(let i=0;i<imgs.length;i++){
+  let img=imgs[i]
+  
+  
+  img.addEventListener("click",function(){
+  main.src=this.src
+})
+  
+}
                     </script>
                 </div>
                 <div class="sc-bdfBwQ sc-gsTCUz kzDdRs bhdLno">
-                    <div data-testid="footer" class="sc-bdfBwQ sc-gsTCUz edtzkC bhdLno"><a href="#"
+                    <div data-testid="footer" class="sc-bdfBwQ sc-gsTCUz edtzkC bhdLno"><a href="list-of-models.html"
                             class="sc-bdfBwQ Tmnro">
                             <div data-testid="Logo--white" class="sc-bdfBwQ hePogb"><img class="logo" src="logo.png"
                                     alt=""></div>
