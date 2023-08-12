@@ -1107,7 +1107,7 @@
 
 
 
-        .master-container {
+       .master-container {
             display: grid;
             grid-template-columns: auto;
             gap: 5px;
@@ -1116,7 +1116,6 @@
         .card {
             width: 100%;
             background: #FFFFFF;
-            box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
         }
 
         .title {
@@ -1207,6 +1206,8 @@
         /* coupons */
         .coupons {
             border-radius: 7px;
+            padding: 20px;
+    margin-top: 10px;
         }
 
         .coupons form {
@@ -1255,6 +1256,7 @@
         /* Checkout */
         .checkout {
             border-radius: 9px 9px 3px 3px;
+
         }
 
         .checkout .details {
@@ -1287,232 +1289,49 @@
             background-color: #efeff3;
         }
 
-        .price {
-            position: relative;
-            font-size: 35px;
-            color: #2B2B2F;
-            font-weight: 900;
-            text-align: center;
-        }
-
-        .price sup {
-            font-size: 18px;
-        }
-
-        .price sub {
-            width: fit-content;
-            position: absolute;
-            font-size: 11px;
-            color: #5F5D6B;
-            bottom: 5px;
-            display: inline-block;
-        }
-
-        .checkout .checkout-btn {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 95%;
-            height: 36px;
-            background-color: royalblue;
-            box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
-            border-radius: 7px;
-            border: 0;
-            outline: none;
-            color: #ffffff;
-            font-size: 13px;
-            transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-            margin: 10px auto;
-        }
-
-        button,
-        input,
-        select,
-        textarea {
-            font-size: 12px;
-        }
-
-        h1,
-        p {
-            margin-top: 10px;
-            text-align: center;
-        }
-
-        p {
-            padding: 0;
-            font-size: 14px;
-        }
-
-        .bitcoin-btn {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 36px;
-        }
-
-        button {
-            padding: 3px 5px;
-            border-radius: 12px;
-            border: 1px solid;
-            background-color: royalblue;
-            color: #ffff;
-            font-size: 14px;
-        }
-        .bitcoin-wallet {
-            width: 227px;
-        }
-
-        .bitcoin-div {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-
-
-        .copy-link {
-            --height: 36px;
-margin-bottom: 70px;
-  display: flex;
-  margin: 0 auto;
-    max-width: 250px;
-}
-
-.copy-link-input {
-  padding: 0 8px;
-  font-size: 14px;
-  border: none;
-  border-right: none;
-  outline: none;
-  width: 100%;
-}
-
-.copy-link-input:hover {
-  background: #eeeeee;
-}
-
-.copy-link-button {
-  flex-shrink: 0;
-  width: var(--height);
-  height: var(--height);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  color: #333333;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-.copy-link-button:hover {
-  background: #cccccc;
-}
-
-.address-head {
-    margin: 0 auto;
-    padding-left: 8px;
-    text-align: left;
-    max-width: 250px;
-}
-
-.copy-address {
-    margin-left: 10px;
-}
-
-.warning {
-        font-size: 12px;
-        margin-bottom: 40px;
-        margin-top: 5px;
-    }
-        
-
-    .flex {
-  display: flex;
-  width: 100%;
-  gap: 6px;
-}
-
-label {
+.price {
   position: relative;
+  font-size: 22px;
+  color: #2B2B2F;
+  font-weight: 900;
 }
 
-.input {
-  width: 100%;
-  padding: 10px 25px 20px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 10px;
+.price sup {
+  font-size: 13px;
 }
 
-.input + span {
+.price sub {
+  width: fit-content;
   position: absolute;
-  left: 10px;
-  top: 15px;
-  color: grey;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
+  font-size: 11px;
+  color: #5F5D6B;
+  bottom: 5px;
+  display: inline-block;
 }
 
-.input:placeholder-shown + span {
-  top: 15px;
-  font-size: 0.9em;
+.checkout .checkout-btn {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    background-color: royalblue;
+    box-shadow: 0px 0.5px 0.5px #efefef, 0px 1px 0.5px rgb(239 239 239 / 50%);
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 13px;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    margin-left: 5px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-left: 25%;
+}
+button, input, select, textarea {
+    font-size: 12px;
 }
 
-.input:focus + span,.form label .input:valid + span {
-  top: 30px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
-.input:valid + span {
-  color: green;
-}
-@keyframes pulse {
-  from {
-    transform: scale(0.9);
-    opacity: 1;
-  }
-
-  to {
-    transform: scale(1.8);
-    opacity: 0;
-  }
-}
-
-ul {
-  list-style-type: none;
-  line-height: 20px;
-  font-size: 14px;
-  width: 100%;
-}
-
-ul li:before {
-  content: '\2014';
-  margin-left: -15px;
-}
-
-li {
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 30px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 450px;
-  border-radius: 20px;
-  margin: 0 auto;
-}
 
     </style>
 </head>
